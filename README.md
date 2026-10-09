@@ -66,7 +66,7 @@ This project predicts in-hospital mortality for adult ICU patients with sepsis, 
 
 ## Limitations and Next Steps
 
--**Single hospital:** MIMIC-IV comes from one hospital in Boston, so the model may not generalize to other hospitals. **Next step:** external validation or another dataset (e.g eICU, a multi-hospital database).
+- **Single hospital:** MIMIC-IV comes from one hospital in Boston, so the model may not generalize to other hospitals. **Next step:** external validation or another dataset (e.g eICU, a multi-hospital database).
 - **Fairness not yet assessed:** race and insurance were excluded as features, but performance across demographic groups wasn't checked. **Next step:** compare AUROC and calibration by sex, race, and insurance.
 - **Patients who died within 24 hours** were kept, though their outcome is partly known at prediction time. **Next step:** exclude them and compare results
 - **Moderate overfitting:** XGBoost scored 0.91 on training data vs 0.84 on test. **Next step:** tune its settings, and add chronic conditions (comorbidities) as features.
